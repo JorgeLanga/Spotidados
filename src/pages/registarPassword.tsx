@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 export const RegistarPassword = () => {
   return (
@@ -14,5 +14,5 @@ export const RegistarPassword = () => {
       </form>
     </div>
   )
-}
+}*/
 

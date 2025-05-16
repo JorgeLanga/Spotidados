@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 
-import { Login } from './assets/pages/login'
-import { RegistarPassword } from './assets/pages/registarPassword'
+/*import { RegistarPassword } from './pages/registarPassword' <RegistarPassword/>*/
+import { Login } from './pages/login'
+
 
 
 export const App=()=> {
@@ -10,8 +9,10 @@ export const App=()=> {
   return (
     <>
       <div>
-        <Login/>
-        <RegistarPassword/>
+        <Login/> 
+        
+        
+        
       </div>
     </>
   )
