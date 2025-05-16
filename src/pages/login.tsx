@@ -9,7 +9,7 @@ export const Login = () => {
             <h2>Login</h2>
                 <input type="user or email" placeholder="User or Email" className="bg-white rounded-md outline-1 m-5 w-40" />
                 <input type="password" placeholder="Password" className="bg-white rounded-md outline-1 m-5 w-40"/>
-            <button className="bg-white rounded-md outline-1 w-40  m-auto w-20">Entrar</button>
+            <button className="bg-white rounded-md outline-1 w-40  m-auto ">Entrar</button>
         </form>
     </div>
         </body>
