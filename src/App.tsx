@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 
 
-import { RegistarPassword } from './assets/pages/registarPassword'
+import { RegistarPassword } from './pages/registarPassword'
 
 
 export const App=()=> {
