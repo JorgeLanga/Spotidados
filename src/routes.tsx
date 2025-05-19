@@ -5,6 +5,7 @@ import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/listarUsuarios";
 import { Destaques } from "./pages/destaques";
+import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     {
       path: "/Destaques",
      element: <Destaques/>,
+    },
+    {
+      path:"/DestaquesDoUsuario",
+      element: <DestaquesDoUsuario/>,
     }
 ]);
 
