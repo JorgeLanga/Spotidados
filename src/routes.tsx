@@ -25,6 +25,7 @@ const router = createBrowserRouter([
     element: <RegistarPassword />,
   } 
   ,
+  
   {
     path: "/listarUsuarios",
     element: <ListarUsuarios />,
