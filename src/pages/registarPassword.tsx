@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from '../imagens/logo.png';
 export const RegistarPassword = () => {
-const inputStyle='bg-white text-black opacity-70% border-1 rounded mx-4 mb-4 py-2 w-70'
+const inputStyle='bg-white text-black opacity-70% border-1 rounded mx-4 mb-4 py-2 w-70 text-center'
   return (
- <body className='bg-red-950 ' >
+ <body className='bg-red-950  ' >
     <div className='flex justify-center items-center h-screen ' >
       
       <form action="" className='w-50% h-50%'>
