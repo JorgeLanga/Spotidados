@@ -1,33 +1,39 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Login } from "./pages/login";
 import { PaginaInicial } from "./pages/paginaInicial";
+import { Login } from "./pages/login";
 import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/listarUsuarios";
+import { Pesquisar } from "./pages/pesquisar";
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/login",
     element: <Login />,
   },
    {
-    path: "/Pagina Inicial",
+    path: "/",
     element: <PaginaInicial />,
   } ,
   {
-    path: "/Cadastro",
+    path: "/cadastro",
     element: <CadastroDados />,
   },
   {
-    path: "/Registar Password",
+    path: "/registarPassword",
     element: <RegistarPassword />,
   } 
   ,
   {
-    path: "/Listar Usuarios",
+    path: "/listarUsuarios",
     element: <ListarUsuarios />,
-  } 
+  } ,
+  {
+    path: "/pesquisar",
+    element: <Pesquisar />,
+  }
+
 ]);
 
 export function Routes() {
