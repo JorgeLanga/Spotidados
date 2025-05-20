@@ -5,9 +5,9 @@ import { Footer } from "../components/footer"
 export const ListarUsuarios=()=>{
     return(
         <body >
-            <div className="bg-red-900 h-screen">
+            <div className="bg-linear-to-t bg-red-500 to-black h-screen">
                 <Header/>
-                <main className="bg-red-300 h-135">
+                <main className="bg-gray-50 h-135">
                 
 
 
