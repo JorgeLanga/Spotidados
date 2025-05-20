@@ -2,7 +2,7 @@ import { Header } from "../components/header"
 import { Footer } from "../components/footer"
 
 
-export const ListarUsuarios=()=>{
+export const Usuarios=()=>{
     return(
         <body >
             <div className="bg-red-900 h-screen">
