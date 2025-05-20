@@ -11,7 +11,7 @@ export const Login=()=>{
 
     return(
     <>
-    <div className='bg-red-950 flex justify-center items-center h-screen '>
+    <div className='bg-linear-to-t bg-red-500 to-black flex justify-center items-center h-screen' >
      <main>
          <form action="" className='w-50% h-50%'>
             <img src={logo} alt="" className="w-80 h-85 py-0 my-0 "/>
@@ -20,7 +20,7 @@ export const Login=()=>{
             <input type="password"placeholder='Palavra-passe' id="" value={senha} onChange={(ev) => setSenha (ev.target.value )} className={inputStyle} />
             <br /> 
             <NavLink to = {'/listarUsuarios'}>
-                <button type='submit' className=' rounded text-white px-3 py-2 m-4 w-70 bg-red-600' >Entrar</button>
+                <button type='submit' className=' rounded text-white px-3 py-2 m-4 w-70 bg-red-950' >Entrar</button>
             </NavLink>
          </form>
      </main>

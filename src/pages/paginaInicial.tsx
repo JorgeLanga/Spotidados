@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 export const PaginaInicial=()=>{
 
     return(
-         <body className='bg-red-950  ' >
+         <body className='bg-linear-to-t bg-red-500 to-black  ' >
     <div className='flex justify-center items-center h-screen ' >
       
       <form action="" className='w-50% h-50%'>
