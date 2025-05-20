@@ -1,6 +1,9 @@
-//import React from 'react'
+
+import React from 'react'
 import logo from '../img/logo.png';
+
 import { NavLink } from 'react-router-dom';
+
 
 
 export const PaginaInicial=()=>{

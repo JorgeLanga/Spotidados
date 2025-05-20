@@ -12,9 +12,12 @@ export const ListarUsuarios = () => {
     getUsers()
  })
 
+
    function getUsers() {
         setUsers(usersData)
     }
+                
+     
 
   return (
     <body className="">
@@ -35,7 +38,10 @@ export const ListarUsuarios = () => {
         </div>
       </div>
 
+
       <Footer />
     </body>
   );
 };
+
+
