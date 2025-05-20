@@ -158,14 +158,14 @@ export const users: userProps[] = [
                 titulo:'body',
                 ano:2021,
                 estiloMusical:'R&B',
-                aderencia:802}
+                aderencia:802},
             
-                {id:4,
+            {id:4,
                 cantor:'tyla',
                 titulo:'Water',
                 ano:2024,
                 estiloMusical:'R&B',
-                aderencia:952}];
+                aderencia:952}],
       password: "",
       email: "",
       birth: ""
