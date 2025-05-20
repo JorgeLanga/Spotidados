@@ -7,7 +7,7 @@ import { ListarUsuarios } from "./pages/usuarios";
 import { Destaques } from "./pages/destaques";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
 
-import { Pesquisar } from "./pages/pesquisar";
+
 
 
 const router = createBrowserRouter([
@@ -45,10 +45,6 @@ const router = createBrowserRouter([
 
     },
 
-  {
-    path: "/pesquisar",
-    element: <Pesquisar />,
-  }
 
 
 ]);
