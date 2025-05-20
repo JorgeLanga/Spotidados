@@ -1,5 +1,4 @@
 import type { userProps } from "../types/users"
- import type { musics } from "../types/users"
 export const users: userProps[] = [
   {
       id: 1,
@@ -9,7 +8,7 @@ export const users: userProps[] = [
         cantor: 'Giveon',
         titulo: 'Love',
         ano: 2020,
-        estiloMusical: 'Soul classico',
+        estiloMusical: 'soul classico',
         aderencia: 1005,
         img: "https://i8.amplience.net/i/naras/giveon_GettyImages-1391856588"
       },
@@ -43,7 +42,7 @@ export const users: userProps[] = [
               }],
       password: "12345",
       email: "cinha@gmail.com",
-      birth: ""
+      birth: "10/08/2000"
   },
   {
       id: 2,
@@ -51,10 +50,10 @@ export const users: userProps[] = [
       mostListenedSongs: [{
         id: 1,
 
-        cantor: 'Chelsia Dinnorath',
+        cantor: 'Chelsia dinnorath',
         titulo: 'Sodadi',
         ano: 2022,
-        estiloMusical: 'Pop',
+        estiloMusical: 'pop',
         aderencia: 1052,
         img: "https://media.pitchfork.com/photos/634085afed0bd687d2acfe97/16:9/w_1280,c_limit/Sodadi.jpeg"
       },
@@ -82,15 +81,15 @@ export const users: userProps[] = [
                  {
                    id: 4,
                    cantor: 'Cef',
-                   titulo: 'Me Consiguiram',
+                   titulo: 'Me consiguiram',
                    ano: 2024,
                    estiloMusical: 'R&B',
                    aderencia: 800,
                    img: "https://i.ytimg.com/vi/lFBzFWJVdhg/maxresdefault.jpg"
                  }],
-      password: "",
-      email: "",
-      birth: ""
+      password: "112233",
+      email: "betina@gmail.com",
+      birth: "21/03/2004"
   },
   {
       id: 3,
@@ -128,15 +127,15 @@ export const users: userProps[] = [
         {
           id: 4,
           cantor: 'K-Marques',
-          titulo: 'A volta do King',
+          titulo: 'A Volta Do King',
           ano: 2011,
-          estiloMusical: 'Pop',
+          estiloMusical: 'pop',
           aderencia: 952,
-          img: "https://th.bing.com/th/id/OIP.6k1spQYNbMf0a3es9WOCUwHaHa?rs=1&pid=ImgDetMain"
+          img: "https://1.bp.blogspot.com/-KPTEloy0pC8/XrE77CbK6PI/AAAAAAAAEpw/9dyVQyzlLvQouJzNRP5TjWDF_GgLdK_qgCLcBGAsYHQ/s1600/K-Marques-A-Volta-Do-King-1200x1200.jpg"
         }],
-      password: "",
-      email: "",
-      birth: ""
+      password: "122233",
+      email: "jorge@gmail.com",
+      birth: "4/11/2001"
   },
   {
       id: 4,
@@ -180,9 +179,9 @@ export const users: userProps[] = [
                   aderencia: 902,
                   img: "https://portalmoznews.com/wp-content/uploads/2023/12/Percella-Do-Lado-feat.-Kheid-Naldo-300x300.webp"
                 }],
-      password: "",
-      email: "",
-      birth: ""
+      password: "886600",
+      email: "neyla@gmail.com",
+      birth: "08/06/2023"
   },
   {
       id: 5,
@@ -194,7 +193,7 @@ export const users: userProps[] = [
         ano: 2019,
         estiloMusical: 'Afrobeats',
         aderencia: 1142,
-        img: ""
+        img: "https://i.ytimg.com/vi/oRKpXw0ITOU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhQMA8=&rs=AOn4CLAz6DP7vQim_6B3UvlxVyLtyqBAIA"
       },
 
         {
@@ -204,17 +203,17 @@ export const users: userProps[] = [
           ano: 2021,
           estiloMusical: 'R&B',
           aderencia: 807,
-          img: "https://i.ytimg.com/vi/gMbt6Cgy9yU/maxresdefault.jpg"
+          img: "https://www.bellanaija.com/wp-content/uploads/2022/09/maxresdefault-66.jpeg"
         }, 
             
                {
                  id: 3,
                  cantor: 'Summer Walker',
-                 titulo: 'Body',
+                 titulo: 'body',
                  ano: 2021,
                  estiloMusical: 'R&B',
                  aderencia: 802,
-                 img: "https://th.bing.com/th/id/R.a55efa9b81d14e109ea977a2d7cb2f6c?rik=1fc%2bSG3BN%2fMNcw&pid=ImgRaw&r=0"
+                 img: "https://i.ytimg.com/vi/alq6yOwqKTY/maxresdefault.jpg"
                },
             
                 {
@@ -224,10 +223,10 @@ export const users: userProps[] = [
                   ano: 2024,
                   estiloMusical: 'R&B',
                   aderencia: 952,
-                  img: "https://th.bing.com/th/id/OIP.8WlP4VcjzWbRw0f2NIvsrwHaHa?rs=1&pid=ImgDetMain"
+                  img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZygXoaSySLbleTdD9ROjRoKYX6uLoeRtw7yzSbJJAvRJ7EFwfECkRh6bjfqCyCDiTioVcjQu-qy447KNRVBEkojWYcpPmxw3AgM599749k-BkkJuVKfQHPJG2SNpR4PGUabdLbv7MoRXZSBOsVwPJuIs8wTh0hVE-SA9gP4_QjnFf1eNTwV-GqJQXCpM/s1200/Tyla%20Water.jpg"
                 }],
-      password: "",
-      email: "",
-      birth: ""
+      password: "445566",
+      email: "almorio@gmail.com",
+      birth: "22/09/2002"
   },
 ]

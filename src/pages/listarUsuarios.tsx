@@ -23,7 +23,7 @@ export const ListarUsuarios=()=>{
 import { useState } from 'react';
 import type { userProps } from '../types/users';
 import { users } from '../data/data';
-
+import {MagnifyingGlass,User,House} from "phosphor-react"
 export const UsersList = () => {
 
 
@@ -44,12 +44,14 @@ export const UsersList = () => {
 
       <div className="flex justify-between items-center p-4 border-b">
         <div className="w-6 h-6">
-          <User className="text-gray-800" size={24} strokeWidth={2} />
+        <User size={28} />
+          {/* <User className="text-gray-800" size={24} strokeWidth={2} /> */}
       
         </div>
         <div className="text-center font-semibold text-gray-80">Usuários</div>
         <div className="w-6 h-6">
-          <Search className="text-gray-800" size={24} strokeWidth={2} />
+        <MagnifyingGlass size={28} />
+          {/* <Search className="text-gray-800" size={24} strokeWidth={2} /> */}
         </div>
       </div>
 
@@ -78,12 +80,12 @@ export const UsersList = () => {
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">Músicas mais ouvidas:</p>
                   <div className="flex flex-wrap gap-1 mt-1">
-                    {user.mostListenedSongs.map((song, index) => (
+                    {user.mostListenedSongs.map((_song, index) => (
                       <span
                         key={index}
                         className="text-xs bg-gray-100 px-2 py-1 rounded"
                       >
-                        {song}
+                      
                       </span>
                     ))}
                   </div>
@@ -96,7 +98,8 @@ export const UsersList = () => {
 
 
       <div className="h-14 border-t flex items-center justify-center">
-        <Home className="h-6 w-6 text-gray-500" />
+      <House size={28} />
+        {/* <Home className="h-6 w-6 text-gray-500" /> */}
       </div>
   </div>
 );
