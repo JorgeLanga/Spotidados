@@ -3,9 +3,9 @@ import { PaginaInicial } from "./pages/paginaInicial";
 import { Login } from "./pages/login";
 import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
-import { ListarUsuarios } from "./pages/usuarios";
-import { Destaques } from "./pages/destaques";
+import { ListarUsuarios } from "./pages/listarUsuarios";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
+
 
 
 
@@ -26,19 +26,15 @@ const router = createBrowserRouter([
   {
     path: "/registarPassword",
     element: <RegistarPassword />,
-  } 
-  ,
+  } ,
   
   {
-    path: "/listarUsuarios",
+    path: "/lista",
     element: <ListarUsuarios />,
+  },
 
-  }, 
   
-    {
-      path: "/Destaques",
-     element: <Destaques/>,
-    },
+    
     {
       path:"/DestaquesDoUsuario",
       element: <DestaquesDoUsuario/>,

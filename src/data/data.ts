@@ -1,5 +1,5 @@
 import type { userProps } from "../types/users"
-export const users: userProps[] = [
+export const usersData: userProps[] = [
   {
       id: 1,
       name: 'Cinha Bila',
