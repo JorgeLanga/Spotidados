@@ -20,7 +20,7 @@ export const ListarUsuarios=()=>{
     )
 // }*/
 
-import { useState } from 'react';
+/*import { useState } from 'react';
 import type { userProps } from '../types/users';
 import { users } from '../data/data';
 
@@ -100,4 +100,4 @@ export const UsersList = () => {
       </div>
   </div>
 );
-}
+}*/

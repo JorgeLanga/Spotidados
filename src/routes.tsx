@@ -1,40 +1,33 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { PaginaInicial } from "./pages/paginaInicial";
 import { Login } from "./pages/login";
+import { PaginaInicial } from "./pages/paginaInicial";
 import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
-import { ListarUsuarios } from "./pages/listarUsuarios";
-<<<<<<< HEAD
+import { ListarUsuarios } from "./pages/usuarios";
 import { Destaques } from "./pages/destaques";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
-=======
-import { Pesquisar } from "./pages/pesquisar";
-
->>>>>>> 82e1e77d0d985540394d224ef140e76fc7c98073
 
 const router = createBrowserRouter([
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
    {
-    path: "/",
+    path: "/Pagina Inicial",
     element: <PaginaInicial />,
   } ,
   {
-    path: "/cadastro",
+    path: "/Cadastro",
     element: <CadastroDados />,
   },
   {
-    path: "/registarPassword",
+    path: "/Registar Password",
     element: <RegistarPassword />,
   } 
   ,
-  
   {
-    path: "/listarUsuarios",
+    path: "/Listar Usuarios",
     element: <ListarUsuarios />,
-<<<<<<< HEAD
   }, 
   
     {
@@ -45,14 +38,6 @@ const router = createBrowserRouter([
       path:"/DestaquesDoUsuario",
       element: <DestaquesDoUsuario/>,
     }
-=======
-  } ,
-  {
-    path: "/pesquisar",
-    element: <Pesquisar />,
-  }
-
->>>>>>> 82e1e77d0d985540394d224ef140e76fc7c98073
 ]);
 
 export function Routes() {
