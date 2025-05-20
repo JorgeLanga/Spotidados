@@ -1,10 +1,9 @@
 import type { userProps } from "../types/users"
- import type { musics } from "../types/users"
 export const users: userProps[] = [
   {
       id: 1,
       name: 'Cinha Bila',
-      mostListenedSongs:  [{id:  1,
+        mostListenedSongs:  [{id:  1,
         cantor:'giveon',
         titulo: 'love',
         ano:2020,
@@ -65,7 +64,7 @@ export const users: userProps[] = [
                     estiloMusical:'R&B',
                     aderencia:800}],
       password: "",
-      email: "",
+      email: "bethina@gmail.com",
       birth: ""
   },
   {
@@ -158,14 +157,14 @@ export const users: userProps[] = [
                 titulo:'body',
                 ano:2021,
                 estiloMusical:'R&B',
-                aderencia:802}
+                aderencia:802},
             
                 {id:4,
                 cantor:'tyla',
                 titulo:'Water',
                 ano:2024,
                 estiloMusical:'R&B',
-                aderencia:952}];
+                aderencia:952}],
       password: "",
       email: "",
       birth: ""
