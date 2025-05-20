@@ -5,7 +5,7 @@ export const users: userProps[] = [
       name: 'Cinha Bila',
         mostListenedSongs:  [{id:  1,
         cantor:'giveon',
-        titulo: 'love',
+        titulo: 'Like i want you',
         ano:2020,
         estiloMusical:'soul classico',
         aderencia:1005},
@@ -30,13 +30,13 @@ export const users: userProps[] = [
                 aderencia:932}],
       password: "12345",
       email: "cinha@gmail.com",
-      birth: ""
+      birth: "10/08/2000"
   },
   {
       id: 2,
       name: 'Bethina Dlambe',
       mostListenedSongs: [{id:1,
-        
+
         cantor:'chelsia dinnorath',
         titulo:'sodadi',
         ano:2022,
@@ -63,9 +63,15 @@ export const users: userProps[] = [
                     ano:2024,
                     estiloMusical:'R&B',
                     aderencia:800}],
+<<<<<<< HEAD
       password: "",
       email: "bethina@gmail.com",
       birth: ""
+=======
+      password: "12346",
+      email: "bethina@gmail.com",
+      birth: "03/06/1998"
+>>>>>>> origin/eucinha
   },
   {
       id: 3,
@@ -97,9 +103,9 @@ export const users: userProps[] = [
                 ano:2011,
                 estiloMusical:'pop',
                 aderencia:952}],
-      password: "",
-      email: "",
-      birth: ""
+      password: "12348",
+      email: "jojo@gmail.com",
+      birth: "23/05/1995"
   },
   {
       id: 4,
@@ -131,9 +137,9 @@ export const users: userProps[] = [
                     ano:2023,
                     estiloMusical:'Amapiano',
                     aderencia:902}],
-      password: "",
-      email: "",
-      birth: ""
+      password: "12349",
+      email: "ney@gmail.com",
+      birth: "22/12/2006"
   },
   {
       id: 5,
@@ -165,8 +171,14 @@ export const users: userProps[] = [
                 ano:2024,
                 estiloMusical:'R&B',
                 aderencia:952}],
+<<<<<<< HEAD
       password: "",
       email: "",
       birth: ""
+=======
+      password: "12340",
+      email: "aldo@gmail.com",
+      birth: "10/04/2004"
+>>>>>>> origin/eucinha
   },
 ]
