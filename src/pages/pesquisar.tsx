@@ -1,46 +1,43 @@
 import { useEffect, useState } from "react";
 import { Footer } from "../components/footer";
 import type { userProps } from "../types/users";
-
+import { usersData } from "../data/data";
+import { UserIcon } from "@phosphor-icons/react";
 
 export const Pesquisar = () => {
-    const [refresh, setRefresh] = useState(0);
-  const [users, setCourses] = useState<userProps[]>([]);
+  const [users, setUsers] = useState<userProps[]>([]);
 
-  useEffect(() => {
-    setCourses(users);
-  }, [refresh]);
-    return (
-        <body className="bg-red-800">
-            <div>
-                 <input type="search" placeholder="Pesquisar" className=" bg-white"/>
 
-               <button  onClick={() => setRefresh(refresh + 1)
+ useEffect(() => {
+    getUsers()
+ })
+
+   function getUsers() {
+        setUsers(usersData)
+    }
+
+    getUsers
+
+  return (
+    <body className="">
+      <div>
+        <button
+          onClick={getUsers}
+          className=" bg-red-700 cursor-pointer text-white px-4 py-2 rounded-md w-40 h-10"
+        >
+          Usuarios
+        </button>
+        <div>
+          {users.map((item) => (
+            <div className="flex justify-center">
+                <p className="bg-black opacity-65 text-white flex  px-20 py-4 my-5 w-80 h-20 "><span className="mx-5 text-red-600"><UserIcon size={20} /> </span> {item.name}<span className=""></span></p>
                 
-               } className=" w-40 bg-cyan-700 hover:bg-cyan-600 cursor-pointer text-white px-4 py-2 rounded-md"> Clique</button>
-            </div>
-
-            
-         <section className="grid grid-cols-4 gap-10">
-          {users.map((user) => (
-            <div
-              key={user.id}
-              className="bg-white shadow-md rounded-lg p-5 my-5"
-            >
-              <h1>{user.name}</h1>
-              <p>Email: {user.email}</p>
-              <p>Data: {user.birth}</p>
-            
-
             </div>
           ))}
-        </section>
-            
+        </div>
+      </div>
 
-
-            <Footer/>
-        </body>
-
-    )
-
-}
+      <Footer />
+    </body>
+  );
+};

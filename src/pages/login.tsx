@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 import React, { useState } from 'react'
-=======
+
 //import React from 'react'
->>>>>>> origin/eucinha
-import logo from '../imagens/logo.png';
+
+import logo from '../img/logo.png';
 import { NavLink } from 'react-router-dom';
 
 

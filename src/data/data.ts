@@ -1,5 +1,5 @@
 import type { userProps } from "../types/users"
-export const users: userProps[] = [
+export const usersData: userProps[] = [
   {
       id: 1,
       name: 'Cinha Bila',
@@ -63,15 +63,10 @@ export const users: userProps[] = [
                     ano:2024,
                     estiloMusical:'R&B',
                     aderencia:800}],
-<<<<<<< HEAD
-      password: "",
-      email: "bethina@gmail.com",
-      birth: ""
-=======
       password: "12346",
       email: "bethina@gmail.com",
       birth: "03/06/1998"
->>>>>>> origin/eucinha
+
   },
   {
       id: 3,
@@ -171,14 +166,10 @@ export const users: userProps[] = [
                 ano:2024,
                 estiloMusical:'R&B',
                 aderencia:952}],
-<<<<<<< HEAD
-      password: "",
-      email: "",
-      birth: ""
-=======
+
       password: "12340",
       email: "aldo@gmail.com",
       birth: "10/04/2004"
->>>>>>> origin/eucinha
+
   },
 ]
