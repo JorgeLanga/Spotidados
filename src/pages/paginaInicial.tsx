@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from '../imagens/logo.png';
-import { NavLink } from 'react-router-dom';
+import logo from "../imagens/logo.png";
+import { NavLink } from "react-router-dom";
+
 
 
 export const PaginaInicial=()=>{
