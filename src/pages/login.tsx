@@ -1,19 +1,30 @@
+import React, { useState } from 'react'
+import logo from '../img/logo.png';
+import { NavLink } from 'react-router-dom';
 
 
+export const Login=()=>{
+    const inputStyle='bg-white text-black opacity-70% border-1 rounded mx-4 mb-4 py-2 w-70 text-center'
+    const [username, setUserName] = useState ("")
+    const [senha, setSenha] = useState ("")
 
-export const Login = () => {
-    return (
-        <body className=" bg-red-700  flex justify-center">
-            <div >
-        <form className="flex flex-col  py-10 ">
-            <h2>Login</h2>
-                <input type="user or email" placeholder="User or Email" className="bg-white rounded-md outline-1 m-5 w-40" />
-                <input type="password" placeholder="Password" className="bg-white rounded-md outline-1 m-5 w-40"/>
-            <button className="bg-white rounded-md outline-1 w-40  m-auto ">Entrar</button>
-        </form>
+    return(
+    <>
+    <div className='bg-red-950 flex justify-center items-center h-screen '>
+     <main>
+         <form action="" className='w-50% h-50%'>
+            <img src={logo} alt="" className="w-80 h-85 py-0 my-0 "/>
+            <input type="text" placeholder='Username' id="" value={username} onChange={(ev) => setUserName (ev.target.value )} className={inputStyle}/>
+            <br /> 
+            <input type="password"placeholder='Palavra-passe' id="" value={senha} onChange={(ev) => setSenha (ev.target.value )} className={inputStyle} />
+            <br /> 
+            <NavLink to = {'/listarUsuarios'}>
+                <button type='submit' className=' rounded text-white px-3 py-2 m-4 w-70 bg-red-600' >Entrar</button>
+            </NavLink>
+         </form>
+     </main>
     </div>
-        </body>
-        
+    </>
     
-)
+    )
 }
