@@ -4,7 +4,7 @@ import { PaginaInicial } from "./pages/paginaInicial";
 import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/usuarios";
-import { Destaques } from "./pages/destaques";
+
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
 
 const router = createBrowserRouter([
@@ -30,10 +30,6 @@ const router = createBrowserRouter([
     element: <ListarUsuarios />,
   }, 
   
-    {
-      path: "/Destaques",
-     element: <Destaques/>,
-    },
     {
       path:"/DestaquesDoUsuario",
       element: <DestaquesDoUsuario/>,
