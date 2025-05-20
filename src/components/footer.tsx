@@ -8,7 +8,7 @@ export const Footer=()=>{
     return(
    <div>
      <footer>
-        <div className='flex flex-row space-around  fixed bottom-0 bg-red-900 rounded w-screen'>
+        <div className='flex flex-row space-around  fixed bottom-0 bg-linear-to-t bg-red-950 to-black rounded w-screen'>
     <span><img src={home} className='h-10 w- mx-5.5 '/></span>
       <span><img src={pesquisa} alt="" className='h-10 w- mx-8' /></span>
       <span><img src={historico} alt="" className='h-10 w- mx-8' /></span>

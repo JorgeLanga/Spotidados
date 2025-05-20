@@ -10,7 +10,7 @@ return(
     <>
     <Header/>
 
-    <div className="flex list-inside">
+    <div className="bg-gray-50 flex list-inside">
        <main>
         <h1>Favoritas</h1>
         <img src={Anna} alt=""  className="w-30 h-45"/> <br />

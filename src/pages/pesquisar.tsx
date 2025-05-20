@@ -1,20 +1,23 @@
+import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 
 
 export const Pesquisar = () => {
     return (
-        <body className="bg-red-800">
-            <div>
-                 <input type="search" placeholder="Pesquisar" className=" bg-white"/>
-            </div>
+        <>
+        <Header/>
             
-           
+                <div className="bg-gray-50">
+                    <input type="search" placeholder="Pesquisar" className=" text-white  bg-red-500 " />
+                </div>
+
+
+
+
+
+                <Footer />
             
-
-
-            <Footer/>
-        </body>
-
+        </>
     )
 
 }
