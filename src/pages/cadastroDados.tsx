@@ -1,6 +1,6 @@
 
 import React from 'react'
-import logo from '../imagens/logo.png';
+import logo from '../img/logo.png';
 import { NavLink } from 'react-router-dom';
 
 export const CadastroDados = () => {

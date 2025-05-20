@@ -8,6 +8,10 @@ import { Destaques } from "./pages/destaques";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
 import { Pesquisar } from "./pages/pesquisar";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev-neyla
 const router = createBrowserRouter([
   {
     path: "/login",
@@ -40,13 +44,21 @@ const router = createBrowserRouter([
     {
       path:"/DestaquesDoUsuario",
       element: <DestaquesDoUsuario/>,
+<<<<<<< HEAD
     },
+=======
+    } ,
+>>>>>>> dev-neyla
   {
     path: "/pesquisar",
     element: <Pesquisar />,
   }
+<<<<<<< HEAD
 
 ]);
+=======
+])
+>>>>>>> dev-neyla
 
 export function Routes() {
   return <RouterProvider router={router} />;
