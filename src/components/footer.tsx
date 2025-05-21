@@ -10,7 +10,7 @@ export const Footer = () => {
     <div>
       <footer>
         <div className="flex flex-row space-around  fixed bottom-0 bg-linear-to-t bg-red-950 to-black rounded w-screen">
-          <NavLink to={""}>
+          <NavLink to={"/DestaquesDoUsuario"}>
             <span>
               <img src={home} className="h-10 w- mx-5.5 " />
             </span>
@@ -24,9 +24,9 @@ export const Footer = () => {
             />
           </NavLink>
 
-          <NavLink to={""}>
+          <NavLink to={"/historico/:id"}>
             <span>
-              <img src={historico} alt="" className="h-10 w- mx-8" />
+              <img src={historico} alt="" className="h-10 w- ml-15" />
             </span>
           </NavLink>
 
@@ -35,7 +35,7 @@ export const Footer = () => {
               <img
                 src={definicoes}
                 alt=""
-                className="h-10 w- ml-10 text-white"
+                className="h-10 w- ml-20 text-white"
               />
             </span>
           </NavLink>

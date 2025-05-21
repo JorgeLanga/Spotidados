@@ -28,7 +28,7 @@ export const Login=()=>{
 
     if (user) {
       localStorage.setItem("usuarioLogado", JSON.stringify(user));
-      navigate("/lista");
+      navigate("/DestaquesDoUsuario");
     } else {
       setErro("Email ou senha incorretos.");
     }

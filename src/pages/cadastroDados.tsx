@@ -3,6 +3,7 @@
 import React from 'react'
 import logo from '../img/logo.png';
 import { NavLink } from 'react-router-dom';
+import { UserIcon } from "@phosphor-icons/react";
 
 export const CadastroDados = () => {
   const inputStyle='bg-white text-black opacity-70% border-1 rounded mx-4 mb-4 py-2 w-70 text-center'
@@ -13,6 +14,7 @@ export const CadastroDados = () => {
       <form action="" className='w-50% h-50%'>
         <img src={logo} alt="" className="w-80 h-85 p-0 m-0 "/>
         <input type="email" placeholder='Email' className={inputStyle}/>
+        <UserIcon size={32} weight="light"  className='absolute bottom-62 mx-5'/>
         <br/> 
         <input type="date" className={inputStyle} /><br />
         <select name="" id="" className={inputStyle}>

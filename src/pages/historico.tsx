@@ -8,16 +8,15 @@ import { NavLink } from 'react-router-dom';
 import { usersData } from "../data/data";
 
 
-export const VisualizarDados = () => {
-  
+export const Historico=()=>{
 
   const { id } = useParams();
  
   const user = usersData.find((u) => u.id === Number(id));
+console.log(user?.id)
+  if (!user) return <p className="flex justify-center text-red-500 bg-black opacity-70">Historico do usuário não encontrado</p>;
 
-  if (!user) return <p>Usuário não encontrado</p>;
-
-  return (
+    return (
     <body className="">
       
         <div
@@ -49,7 +48,8 @@ export const VisualizarDados = () => {
           </ul>
         </div>
  
-      <Footer />
+      <Footer/>
     </body>
   );
-};
+    
+}

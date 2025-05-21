@@ -6,6 +6,7 @@ import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/listarUsuarios";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
 import { VisualizarDados } from "./pages/visualizarDados";
+import { Historico } from "./pages/historico";
 
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
       path:"/dadosUsuario/:id",
       element: <VisualizarDados/>,
+    }, 
+     {
+      path:"/historico/:id",
+      element: <Historico/>,
     }
 
   
