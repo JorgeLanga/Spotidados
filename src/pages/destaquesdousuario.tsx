@@ -26,6 +26,16 @@ return(
     <>
     <Header/>
 
+<<<<<<< HEAD
+=======
+    <div className="bg-gray-50 flex list-inside">
+       <main>
+        <h1>Favoritas</h1>
+        <img src={Anna} alt=""  className="w-30 h-45"/> <br />
+        <img src={Ubakka} alt=""  className="w-30 h-45" />
+    <h1>Destaques</h1>
+        <img src={Lizha} alt=""  className=" w-30 h-45"/>
+>>>>>>> 94eda82e8f8e4359d87aeb37e747b90baafb667b
     
        <main className="">
      

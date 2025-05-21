@@ -1,103 +1,45 @@
-/*import { Header } from "../components/header"
-import { Footer } from "../components/footer"
+import { useEffect, useState } from "react";
+import { Footer } from "../components/footer";
+import type { userProps } from "../types/users";
+import { usersData } from "../data/data";
+import { UserIcon } from "@phosphor-icons/react";
+
+export const ListarUsuarios = () => {
+  const [users, setUsers] = useState<userProps[]>([]);
 
 
-export const ListarUsuarios=()=>{
-    return(
-        <body >
-            <div className="bg-red-900 h-screen">
-                <Header/>
-                <main className="bg-red-300 h-135">
+ useEffect(() => {
+    getUsers()
+ })
+
+
+   function getUsers() {
+        setUsers(usersData)
+    }
                 
-
-                
-                </main>
-                <Footer/>
-
-            </div>
-          
-        </body>
-    )
-// }*/
-
-import { useState } from 'react';
-import type { userProps } from '../types/users';
-import { users } from '../data/data';
-
-export const UsersList = () => {
-
-
-  const [searchQuery, setSearchQuery] = useState('');
-  const [displayedUsers, setDisplayedUsers] = useState<userProps[]>(users);
-
-  const handleSearch = (query: string) => {
-    setSearchQuery(query);
-    const filtered = users.filter(user =>
-      user.name.toLowerCase().includes(query.toLowerCase())
-    );
-    setDisplayedUsers(filtered);
-  };
+     
 
   return (
+    <body className="">
+      <div>
+        <button
+          onClick={getUsers}
+          className=" bg-red-700 cursor-pointer text-white px-4 py-2 rounded-md w-40 h-10"
+        >
+          Usuarios
+        </button>
+        <div>
+          {users.map((item) => (
+            <div className="flex justify-center">
+                <p className="bg-black opacity-65 text-white flex  px-20 py-4 my-5 w-80 h-20 "><span className="mx-5 text-red-600"><UserIcon size={20} /> </span> {item.name}<span className=""></span></p>
 
-    <div className="flex flex-col h-screen bg-public/img/background.">
-
-      <div className="flex justify-between items-center p-4 border-b">
-        <div className="w-6 h-6">
-          <User className="text-gray-800" size={24} strokeWidth={2} />
-      
-        </div>
-        <div className="text-center font-semibold text-gray-80">Usuários</div>
-        <div className="w-6 h-6">
-          <Search className="text-gray-800" size={24} strokeWidth={2} />
-        </div>
-      </div>
-
-
-      <div className="px-4 py-3">
-        <input
-          type="text"
-          placeholder="Pesquisar usuários..."
-          className="w-full p-2 border rounded-lg"
-          value={searchQuery}
-          onChange={(e) => handleSearch(e.target.value)}
-        />
-      </div>
-
-
-      <div className="flex-1 overflow-y-auto px-4">
-        <h2 className="text-lg font-semibold my-3">Usuários</h2>
-        <ul className="space-y-3">
-          {displayedUsers.map((user) => (
-            <li
-              key={user.id}
-              className="border rounded-lg p-3 flex items-start"
-            >
-              <div className="flex-1">
-                <h3 className="font-medium text-gray-800">{user.name}</h3>
-                <div className="mt-2">
-                  <p className="text-sm text-gray-500">Músicas mais ouvidas:</p>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {user.mostListenedSongs.map((song, index) => (
-                      <span
-                        key={index}
-                        className="text-xs bg-gray-100 px-2 py-1 rounded"
-                      >
-                        {song}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
 
-      <div className="h-14 border-t flex items-center justify-center">
-        <Home className="h-6 w-6 text-gray-500" />
-      </div>
-  </div>
-);
-}
+      <Footer />
+    </body>
+  );
+};
