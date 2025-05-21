@@ -2,7 +2,10 @@
 
 import React from 'react'
 import logo from '../img/logo.png';
+<<<<<<< HEAD
+=======
 
+>>>>>>> 94eda82e8f8e4359d87aeb37e747b90baafb667b
 import { NavLink } from 'react-router-dom';
 
 

@@ -1,46 +1,42 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { PaginaInicial } from "./pages/paginaInicial";
 import { Login } from "./pages/login";
+import { PaginaInicial } from "./pages/paginaInicial";
 import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/listarUsuarios";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
+
 import { VisualizarDados } from "./pages/visualizarDados";
 import { Historico } from "./pages/historico";
 
 
-
-
-
 const router = createBrowserRouter([
   {
-    path: "/login",
+    path: "/",
     element: <Login />,
   },
    {
-    path: "/",
+    path: "/Pagina Inicial",
     element: <PaginaInicial />,
   } ,
   {
-    path: "/cadastro",
+    path: "/Cadastro",
     element: <CadastroDados />,
   },
   {
-    path: "/registarPassword",
+    path: "/Registar Password",
     element: <RegistarPassword />,
+
   } ,
   
-
-  {
-    path: "/lista",
-    element: <ListarUsuarios />,
-
-
-  },
     {
       path:"/DestaquesDoUsuario",
       element: <DestaquesDoUsuario/>,
-    }
+    },
+  {
+    path: "/lista",
+    element: <ListarUsuarios />,
+  }
   ,
   {
       path:"/dadosUsuario/:id",
@@ -52,7 +48,6 @@ const router = createBrowserRouter([
     }
 
   
-
 ]);
 
 
