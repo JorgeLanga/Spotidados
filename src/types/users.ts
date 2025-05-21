@@ -14,4 +14,5 @@ export interface userProps {
     ano:number,
     estiloMusical:string
     aderencia:number;
+    img:string
   }
