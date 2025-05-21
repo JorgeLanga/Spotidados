@@ -47,10 +47,12 @@ export const Login=()=>{
             <input type="password"placeholder='Palavra-passe' id="" value={senha}
         onChange={(e) => setSenha(e.target.value)} className={inputStyle} />
             <br /> 
+
           
                 <button type='submit' onClick={handleLogin} className=' rounded text-white px-3 py-2 m-4 w-70 bg-red-950' >Entrar</button>
                  {erro && <p className="text-white mt-3 text-sm text-center">{erro}</p>}
           
+
          </form>
      </main>
     </div>
