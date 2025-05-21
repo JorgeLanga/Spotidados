@@ -5,7 +5,7 @@ import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/listarUsuarios";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
-import { Pesquisar } from "./pages/pesquisar";
+import{pesquisar} from "./pages/pesquisar"
 
 
 
@@ -45,6 +45,8 @@ const router = createBrowserRouter([
       element: <DestaquesDoUsuario/>,
 
     },
+
+
 
 
 
