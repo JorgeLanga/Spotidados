@@ -135,7 +135,7 @@ export const usersData: userProps[] = [
           aderencia: 952,
           img: "https://1.bp.blogspot.com/-KPTEloy0pC8/XrE77CbK6PI/AAAAAAAAEpw/9dyVQyzlLvQouJzNRP5TjWDF_GgLdK_qgCLcBGAsYHQ/s1600/K-Marques-A-Volta-Do-King-1200x1200.jpg"
         }],
-      password: "122233",
+      password: "12345",
       email: "jorge@gmail.com",
       birth: "4/11/2001"
   },
