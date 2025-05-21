@@ -20,7 +20,7 @@ export const Login=()=>{
             <br /> 
             <input type="password"placeholder='Palavra-passe' id=""  className={inputStyle} />
             <br /> 
-            <NavLink to = {'/listarUsuarios'}>
+            <NavLink to = {'/destaquesdousuario'}>
                 <button type='submit' className=' rounded text-white px-3 py-2 m-4 w-70 bg-red-950' >Entrar</button>
             </NavLink>
          </form>
