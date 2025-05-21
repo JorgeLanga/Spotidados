@@ -5,7 +5,7 @@ import { CadastroDados } from "./pages/cadastroDados";
 import { RegistarPassword } from "./pages/registarPassword";
 import { ListarUsuarios } from "./pages/listarUsuarios";
 import{DestaquesDoUsuario} from "./pages/destaquesdousuario";
-import{pesquisar} from "./pages/pesquisar"
+//import{pesquisar} from "./pages/pesquisar"
 
 
 
@@ -28,10 +28,10 @@ const router = createBrowserRouter([
   } 
   ,
 
-  {
-    path: "/pesquisar",
-    element: <Pesquisar />,
-  }, 
+  // {
+  //   path: "/pesquisar",
+  //   element: <pesquisar />,
+  // }, 
   
   {
     path: "/lista",
